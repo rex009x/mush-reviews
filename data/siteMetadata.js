@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://mushreviews.vercel.app/',
   siteRepo: 'https://github.com/rex009x/mush-reviews',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/banner.png`,
   email: '1lucjim@gmail.com',
   github: 'https://github.com/rex009x',
   linkedin: 'https://www.linkedin.com/m/in/1lucjim/',

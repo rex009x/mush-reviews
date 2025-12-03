@@ -1,3 +1,5 @@
+![mush-reviews-banner](/public/static/images/banner.png)
+
 # Mushreviews
 
 Mushreviews is a personal food blog that chronicles the culinary adventures of my wife and me. Here, you'll find honest reviews of restaurants we visit and a growing collection of homemade meal recipes. Each post shares our experiences, favorite dishes, and lessons learned in the kitchen. Mushreviews is our way of documenting and celebrating the joy of food together—both at the table and in our own kitchen.
