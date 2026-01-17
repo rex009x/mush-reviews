@@ -1,13 +1,20 @@
 {
+  "review": 2,
+  "izakaya": 1,
+  "japanese": 2,
+  "lic": 1,
+  "queens": 2,
+  "seafood": 1,
+  "udon": 1,
+  "curry": 1,
+  "skewers": 1,
+  "happy-hour": 1,
+  "ayce": 1,
+  "sushi": 1,
+  "salmon": 1,
+  "tuna": 1,
   "homemade": 1,
   "recipe": 1,
   "chicken": 1,
-  "air-fry": 1,
-  "review": 1,
-  "ayce": 1,
-  "sushi": 1,
-  "japanese": 1,
-  "queens": 1,
-  "salmon": 1,
-  "tuna": 1
+  "air-fry": 1
 }
