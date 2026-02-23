@@ -109,6 +109,11 @@ export const Blog = defineDocumentType(() => ({
     layout: { type: 'string' },
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
+    restaurantName: { type: 'string' },
+    restaurantAddress: { type: 'string' },
+    googleMapsUrl: { type: 'string' },
+    lat: { type: 'number' },
+    lng: { type: 'number' },
   },
   computedFields: {
     ...computedFields,
