@@ -26,7 +26,9 @@ interface LayoutProps {
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
   const { path, date, title, tags } = content
+  const { restaurantName, restaurantAddress, googleMapsUrl } = content
   const basePath = path.split('/')[0]
+  const hasRestaurantInfo = restaurantName || restaurantAddress || googleMapsUrl
 
   return (
     <SectionContainer>
@@ -48,6 +50,21 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
+              {hasRestaurantInfo && (
+                <div className="mx-auto flex max-w-2xl flex-col items-center gap-2 pt-4 text-sm text-gray-600 dark:text-gray-300">
+                  {restaurantName && <p className="text-base font-semibold">{restaurantName}</p>}
+                  {restaurantAddress && <p>{restaurantAddress}</p>}
+                  {googleMapsUrl && (
+                    <Link
+                      href={googleMapsUrl}
+                      aria-label={`Open ${restaurantName || 'restaurant'} in Google Maps`}
+                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    >
+                      Open in Google Maps
+                    </Link>
+                  )}
+                </div>
+              )}
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0 dark:divide-gray-700">
