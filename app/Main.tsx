@@ -17,6 +17,15 @@ export default function Home({ posts }) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          <div>
+            <Link
+              href="/map"
+              className="text-primary-400 hover:text-primary-500 dark:hover:text-primary-300 text-base font-medium"
+              aria-label="Explore the mushroom map"
+            >
+              Explore map &rarr;
+            </Link>
+          </div>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
