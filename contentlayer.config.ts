@@ -112,6 +112,8 @@ export const Blog = defineDocumentType(() => ({
     restaurantName: { type: 'string' },
     restaurantAddress: { type: 'string' },
     googleMapsUrl: { type: 'string' },
+    lat: { type: 'number' },
+    lng: { type: 'number' },
   },
   computedFields: {
     ...computedFields,
